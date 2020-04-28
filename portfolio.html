@@ -1,120 +1,177 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ポートフォリオ</title>
     <link rel="stylesheet" type="text/css" href="css/portfolio.css">
     <style type="text/css">
-    body
-    {
-        padding: 0;
-        margin: 0;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    
-    .text-img{
-        position: relative;
-        
-    }
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
 
-    .text-img p
-    {
-        position: absolute;
-        color: white;
-        top: -50%;
-        left: 20%;
-        font-size: 8em;
-    }
+        .text-img {
+            position: absolute;
+        }
 
-    .text-img img
-    {
-        width: 1280px;
-        height: 200px;
-        
-    }
+        .text-img p {
+            position: absolute;
+            color: white;
+            top: -50%;
+            left: 20%;
+            font-size: 8em;
+        }
 
-    #cover
-    {
-        background-color: #000000;
-        opacity: .6;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: none;
-        z-index: 2;
-    }
+        .text-img img {
+            width: 1280px;
+            height: 200px;
+            top: 90%;
+        }
 
-    #menu
-    {
-        background-color: blue;
-        color: #ffffff;
-        position: absolute;
-        top: 0;
-        left: -160px;
-        padding: 8px;
-        width: 180px;
-        min-height: 100%;
-        z-index: 3;
-        box-sizing: border-box;
-        transition: .4s;
-    }
+        .text-about {
+            position: absolute;
+        }
 
-    #open,#close
-    {
-        float: left;
-        cursor: pointer;
-    }
-    
-    #cover.menu-open
-    {
-        display: block;
-    }
+        .text-about h1 {
+            position: absolute;
+            color: rgb(255, 255, 255);
+            top: 300px;
+            left: 50px;
+            font-size: 2em;
+        }
 
-    #menu.menu-open
-    {
-        left: 0;
-    }
+        .text-about img {
+            position: absolute;
+            width: 1280px;
+            height: 100px;
+            top: 300px;
+        }
 
+        .text-work {
+            position: relative;
+        }
+
+        .text-work img {
+            position: absolute;
+            width: 1280px;
+            height: 100px;
+            top: 600px;
+        }
+
+        .text-work h1 {
+            position: absolute;
+            color: rgb(252, 252, 252);
+            top: 600px;
+            left: 50px;
+            font-size: 2em;
+        }
+
+        #greeting {
+            position: relative;
+            top: 200px;
+            left: 30px;
+        }
+
+        #self-introduction {
+            position: relative;
+            top: 350px;
+            left: 30px;
+        }
+
+        #cover {
+            background-color: #000000;
+            opacity: .6;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+            z-index: 2;
+        }
+
+        #menu {
+            background-color: blue;
+            color: #ffffff;
+            position: absolute;
+            top: 0;
+            left: -160px;
+            padding: 8px;
+            width: 180px;
+            height: 100%;
+            min-height: 100%;
+            z-index: 3;
+            box-sizing: border-box;
+            transition: .4s;
+            position: fixed;
+        }
+
+        #open,
+        #close {
+            float: left;
+            cursor: pointer;
+        }
+
+        #cover.menu-open {
+            display: block;
+        }
+
+        #menu.menu-open {
+            left: 0;
+        }
     </style>
 </head>
+
 <body>
     <div id="menu">
         <!-- <i class="fa fa-bars" id="close"></i> -->
-            <ul>
-             <li>Home</li>
-             <li>About</li>
-             <li>Work</li>
-            </ul>
-        </div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Work</li>
+        </ul>
     </div>
 
     <div class="text-img">
-     <!-- <i class="fa fa-bars" id="open"></i> -->
-     <img src="img/default.jpg">
-     <p>Gwey Masao</p>
+        <!-- <i class="fa fa-bars" id="open"></i> -->
+        <img src="img/default.jpg">
+        <p>Gwey Masao</p>
+    </div>
+
+    <div class="text-about">
+        <img src="img/default.jpg">
+        <h1>About</h1>
+        <p id="greeting">こんにちは。グウェイ将生と申します。<br>ここでは私の製作したもの、
+            制作に携わったものを記載していきたいと思います。</p>
+        <p id="self-introduction">日本工学院専門学校で主にゲームプログラミングについて学んでいました。</p>
+    </div>
+
+    <div class="text-work">
+        <img src="img/default.jpg">
+        <h1>Work</h1>
     </div>
 
     <div id="cover"></div>
+
     <script>
         'use strict';
         //const open = document.getElementById('open');
         const menu = document.getElementById('menu');
         const cover = document.getElementById('cover');
         //const close = document.getElementById('close');
-        menu.addEventListener('mouseover',()=>{
-            menu.className='menu-open';
-            cover.className='menu-open';
+        menu.addEventListener('mouseover', () => {
+            menu.className = 'menu-open';
+            cover.className = 'menu-open';
         });
 
-        menu.addEventListener('mouseleave',()=>{
-            menu.className='';
-            cover.className='';
+        menu.addEventListener('mouseleave', () => {
+            menu.className = '';
+            cover.className = '';
         });
-
-
     </script>
 </body>
+
 </html>
