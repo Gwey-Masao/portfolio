@@ -11,6 +11,7 @@
             padding: 0;
             margin: 0;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            overflow-x: hidden;
         }
 
         .text-img {
@@ -26,9 +27,10 @@
         }
 
         .text-img img {
-            width: 1280px;
+            width: 1265px;
             height: 200px;
             top: 90%;
+
         }
 
         .text-about {
@@ -45,20 +47,131 @@
 
         .text-about img {
             position: absolute;
-            width: 1280px;
+            width: 1265px;
             height: 100px;
             top: 300px;
         }
 
         .text-work {
-            position: relative;
+            position: absolute;
         }
 
         .text-work img {
             position: absolute;
-            width: 1280px;
+            width: 1265px;
             height: 100px;
             top: 600px;
+
+        }
+
+        #asterisumos-title {
+            position: relative;
+            color: rgb(0, 0, 0);
+            top: 700px;
+            left: 470px;
+        }
+
+        h2 {
+            position: relative;
+            color: rgb(0, 0, 0);
+            top: 700px;
+            left: 470px;
+        }
+
+        h3 {
+            position: relative;
+            color: rgb(0, 0, 0);
+            top: 700px;
+            left: 470px;
+            font-size: 1.5em;
+        }
+
+        #impression {
+            position: relative;
+            color: rgb(0, 0, 0);
+            top: 690px;
+            left: 480px;
+        }
+
+        #hard-work {
+            position: relative;
+            color: rgb(0, 0, 0);
+            top: 680px;
+            left: 480px;
+        }
+
+        #game-play {
+            position: absolute;
+            width: 450px;
+            height: 200px;
+            top: 700px;
+            left: 30px;
+        }
+
+        #game-bossbattle {
+            position: absolute;
+            width: 450px;
+            height: 200px;
+            top: 900px;
+            left: 30px;
+        }
+
+        #graduation-title {
+            position: relative;
+            color: rgb(0, 0, 0);
+            top: 850px;
+            left: 470px;
+        }
+
+        #graduation-overview {
+            position: relative;
+            color: rgb(2, 0, 0);
+            top: 830px;
+            left: 490px;
+        }
+
+        #graduation-attention{
+            position: relative;
+            color: rgb(2, 0, 0);
+            top: 850px;
+            left: 470px;
+        }
+
+        #graduation-impression{
+            position: relative;
+            color: rgb(2, 0, 0);
+            top: 820px;
+            left: 490px;
+        }
+
+        #graduation-hard{
+            position: relative;
+            color: rgb(2, 0, 0);
+            top: 830px;
+            left: 470px;
+        }
+
+        #graduation-hardwork{
+            position: relative;
+            color: rgb(2, 0, 0);
+            top: 800px;
+            left: 490px;
+        }
+
+        #graduation-production1 {
+            position: absolute;
+            width: 450px;
+            height: 300px;
+            top: 1300px;
+            left: 30px;
+        }
+
+        #graduation-production2 {
+            position: absolute;
+            width: 450px;
+            height: 200px;
+            top: 1500px;
+            left: 30px;
         }
 
         .text-work h1 {
@@ -67,6 +180,13 @@
             top: 600px;
             left: 50px;
             font-size: 2em;
+        }
+
+        .text-work p {
+            position: relative;
+            color: rgb(2, 0, 0);
+            top: 690px;
+            left: 490px;
         }
 
         #greeting {
@@ -128,11 +248,11 @@
 <body>
     <div id="menu">
         <!-- <i class="fa fa-bars" id="close"></i> -->
-        <ul>
+        <header>
             <li>Home</li>
             <li>About</li>
             <li>Work</li>
-        </ul>
+        </h>
     </div>
 
     <div class="text-img">
@@ -144,14 +264,50 @@
     <div class="text-about">
         <img src="img/default.jpg">
         <h1>About</h1>
-        <p id="greeting">こんにちは。グウェイ将生と申します。<br>ここでは私の製作したもの、
+        <p id="greeting">こんにちは。グウェイ将生と申します。<br>ここでは私の制作したもの、
             制作に携わったものを記載していきたいと思います。</p>
-        <p id="self-introduction">日本工学院専門学校で主にゲームプログラミングについて学んでいました。</p>
+        <p id="self-introduction">グウェイ将生（22歳)<br>
+        2016年4月に日本工学院専門学校に入学し、そこでゲームプログラミングをメインに学び、2020年3月に卒業<br>
+        2020年4月1日にフォース株式会社に入社<br>
+       【自分の強み】<br>
+        何事も最後まで諦めず全力でやりきる</p>
     </div>
 
     <div class="text-work">
         <img src="img/default.jpg">
+        <h1 id="asterisumos-title">【Asterisumos】</h1>
+        <p>ステージに落ちている星を集め、星座を完成させて、巨大なボスと戦う探索アクションゲーム。<br>
+            この作品は私が専門学校4年生の時、チーム制作という授業の中で制作したものです。この制作では<br>私は主に、
+            プレイヤーの動きをメインに開発していました。
+        </p>
+
+        <h2>【制作していく中で気を付けたこと】</h2>
+        <p id="impression">プレイヤーのアニメーション、当たり判定、発射する弾のスピードなど細かいところに<br>
+            気を付けて何度も調整しながら制作していきました。
+        </p>
+        <h3>【制作中に苦労したこと】</h3>
+        <p id="hard-work">ステージが上手く読み込めなかったり、プレイヤーのアニメーションが上手くいかないなどの
+            <br>バグの修正作業が一番苦労しました。
+        </p>
+        <h1 id="graduation-title">【爆破せよ】</h1>
+        <p id="graduation-overview">建物内に潜入して爆弾を設置し、爆発する前に建物から脱出するゲーム。<br>
+            この作品は私が専門学校4年生の時、卒業制作の中で個人で制作したものになります。</p>
+        <h2 id="graduation-attention">【制作していく中で気を付けたこと】</h2>
+        <p id="graduation-impression">プレイヤー操作、カメラ操作、ステージギミックの細かい調整や<br>
+            抜け道ができないようにステージを作ることを心がけました。
+        </p>
+        <h3 id="graduation-hard">【制作中に苦労したこと】</h3>
+        <p id="graduation-hardwork">ゲーム自体が重かったのでオブジェクトの数を減らしたり、<br>爆発エフェクトの
+            パーティクルを減らしたりなど軽くするのに試行錯誤しました。
+        </p>
         <h1>Work</h1>
+    </div>
+
+    <div>
+        <img id="game-play" src="img/asterismos-game.png">
+        <img id="game-bossbattle" src="img/asterismos-boss.png">
+        <img id="graduation-production1" src="img/Play1.png">
+        <img id="graduation-production2" src="img/Play2.png">
     </div>
 
     <div id="cover"></div>
