@@ -18,11 +18,11 @@
             overflow-x: hidden;
         }
 
-        .text-img {
+        .theme-img {
             position: absolute;
         }
 
-        .text-img p {
+        .theme-img p {
             position: absolute;
             color: white;
             top: -50%;
@@ -30,18 +30,18 @@
             font-size: 8em;
         }
 
-        .text-img img {
+        .theme-img img {
             width: 1265px;
             height: 200px;
             top: 90%;
 
         }
 
-        .text-about {
+        .theme-about {
             position: absolute;
         }
 
-        .text-about h1 {
+        .theme-about h1 {
             position: absolute;
             color: rgb(255, 255, 255);
             top: 300px;
@@ -49,18 +49,18 @@
             font-size: 2em;
         }
 
-        .text-about img {
+        .theme-about img {
             position: absolute;
             width: 1265px;
             height: 100px;
             top: 300px;
         }
 
-        .text-work {
+        .theme-work {
             position: absolute;
         }
 
-        .text-work img {
+        .theme-work img {
             position: absolute;
             width: 1265px;
             height: 100px;
@@ -108,16 +108,16 @@
             position: absolute;
             width: 450px;
             height: 200px;
-            top: 700px;
-            left: 30px;
+            top: 720px;
+            left: 20px;
         }
 
         #game-bossbattle {
             position: absolute;
             width: 450px;
             height: 200px;
-            top: 900px;
-            left: 30px;
+            top: 920px;
+            left: 20px;
         }
 
         #graduation-title {
@@ -144,7 +144,7 @@
         #graduation-impression{
             position: relative;
             color: rgb(2, 0, 0);
-            top: 820px;
+            top: 830px;
             left: 490px;
         }
 
@@ -167,7 +167,7 @@
             width: 450px;
             height: 300px;
             top: 1300px;
-            left: 30px;
+            left: 20px;
         }
 
         #graduation-production2 {
@@ -175,10 +175,26 @@
             width: 450px;
             height: 200px;
             top: 1500px;
-            left: 30px;
+            left: 20px;
         }
 
-        .text-work h1 {
+        #soundraw{
+            position: absolute;
+            width: 450px;
+            height: 200px;
+            top: 1900px;
+            left: 20px;
+        }
+
+        #soundraw-result{
+            position: absolute;
+            width: 450px;
+            height: 200px;
+            top: 2100px;
+            left: 20px;
+        }
+
+        .theme-work h1 {
             position: absolute;
             color: rgb(252, 252, 252);
             top: 600px;
@@ -186,11 +202,11 @@
             font-size: 2em;
         }
 
-        .text-work p {
+        .theme-work p {
             position: relative;
             color: rgb(2, 0, 0);
             top: 690px;
-            left: 490px;
+            left: 480px;
         }
 
         #greeting {
@@ -209,7 +225,7 @@
             background-color: #000000;
             opacity: .6;
             width: 100%;
-            height: 280%;
+            height: 380%;
             position: absolute;
             top: 0;
             left: 0;
@@ -218,7 +234,7 @@
         }
 
         #menu {
-            background-color: blue;
+            background-color: rgb(95, 91, 91);
             color: #ffffff;
             position: absolute;
             top: 0;
@@ -247,30 +263,67 @@
         #menu.menu-open {
             left: 0;
         }
+
+        #soundraw-title{
+            position: absolute;
+            color: rgb(0, 0, 0);
+            top: 1870px;
+            left: 460px;
+        }
+
+        .soundraw-work h2{
+            position: relative;
+            color: rgb(2, 0, 0);
+            top: 1910px;
+            left: 460px;
+        }
+
+        #sounddraw-hard{
+            position: relative;
+            color: rgb(2, 0, 0);
+            top: 1890px;
+            left: 460px;
+        }
+        #soundraw-pre{
+            position: relative;
+            color: rgb(2, 0, 0);
+            top: 1910px;
+            left: 480px;
+        }
+        #soundraw-impression{
+            position: relative;
+            color: rgb(2, 0, 0);
+            top: 1890px;
+            left: 470px;
+        }
+        #soundraw-hardwork{
+            position: relative;
+            color: rgb(2, 0, 0);
+            top: 1870px;
+            left: 470px;
+        }
     </style>
 </head>
 
 <body>
     <div id="menu">
-     <!-- <nav></nav><a href="#Home"></a> <a href="#About"></a> <a href="#Work"></a></nav>  -->
-        <!-- <i class="fa fa-bars" id="close"></i> -->
         <ul>
             <li><a href="#Home">Home</a></li>
             <li><a href="#About">About</a></li>
             <li><a href="#Work">Work</a></li>
+            <li><a href="#asterisumos-title">Asterisumos</a></li>
+            <li><a href="#graduation-title">爆破せよ</a></li>
+            <li><a href="#soundraw-title">Soundraw</a> </li>
         </ul>
     </div>
-
     
-    <div class="text-img">
-        <!-- <i class="fa fa-bars" id="open"></i> -->
+    <div class="theme-img">
         <img src="img/default.jpg">
         <p id="Home">Gwey Masao</p>
       </div>
     </div>
-
     
-      <div class="text-about">
+      <div class="theme-about">
         <img src="img/default.jpg">
         <h1 id="About">About</h1>
         <p id="greeting">こんにちは。グウェイ将生と申します。<br>ここでは私の制作したもの、
@@ -279,13 +332,13 @@
         2016年4月に日本工学院専門学校に入学し、そこでゲームプログラミングをメインに学び、2020年3月に卒業<br>
         2020年4月1日にフォース株式会社に入社<br>
        【自分の強み】<br>
-        何事も最後まで諦めず全力でやりきる</p>
+        何事も最後まで諦めず全力でやりきる<br>【趣味】<br>・ゲーム（勝つために情報取集をして戦略を立ててプレイする）
+        ・音楽鑑賞（アニソンやドラマ主題歌などお気に入りの曲を聞いてリフレッシュしている）
+        </p>
         </div>
     </div>
-
     
-      <div class="text-work">
-        
+      <div class="theme-work">
         <img src="img/default.jpg">
         <h1 id="asterisumos-title">【Asterisumos】</h1>
         <p>ステージに落ちている星を集め、星座を完成させて、巨大なボスと戦う探索アクションゲーム。<br>
@@ -316,11 +369,25 @@
       </div>
     </div>
 
+    <div class="soundraw-work">
+        <h1 id="soundraw-title">【Soundraw】</h1>
+        <p id="soundraw-pre">暗闇の中、音を響かせゴールを目指すアクションゲーム。<br>この作品は私が専門学校3年生後期の時、
+        チーム制作の中で制作したものです。この制作では<br>私は
+        プレイヤーの動きやその他のシステム関連の担当でした。</p>
+        <h2>【制作していく中で気を付けたこと】</h2>
+        <p id="soundraw-impression">プレイヤーがステージの壁をすり抜けないようにしたり、
+        <br>丁度いい難易度にするようにプレイヤーの調整に注意しました。</p>
+        <h3 id="sounddraw-hard">【制作中に苦労したこと】</h3>
+        <p id="soundraw-hardwork">この時は、初めて経験することが多かったのでそれらを覚えるのに苦労しましたが、<br>無事に使えるようになりました。</p>
+    </div>
+
     <div>
         <img id="game-play" src="img/asterismos-game.png">
         <img id="game-bossbattle" src="img/asterismos-boss.png">
         <img id="graduation-production1" src="img/Play1.png">
         <img id="graduation-production2" src="img/Play2.png">
+        <img id="soundraw" src="img/soundroaw.png">
+        <img id="soundraw-result" src="img/result.png">
     </div>
 
     <div id="cover"></div>
@@ -342,5 +409,4 @@
         });
     </script>
 </body>
-
 </html>
